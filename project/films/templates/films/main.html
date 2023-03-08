@@ -1,0 +1,12 @@
+{% extends 'base.html' %}{% block content %}
+<div class="container">
+	<h1>This is the films MAIN page</h1> 
+	<br> 
+	<h4>Some Pixar Movies:</h4><ul> 
+	  {% for number in '012'|make_list %} 
+	    <li>Toy Story {{forloop.counter}}</li> 
+	  {% endfor %} 
+	</ul>
+
+</div>
+{% endblock  %}
